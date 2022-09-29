@@ -14,7 +14,7 @@ public class ArrayListMethods extends ArrayList {
 		al2.add(30);
 		al2.add(40);
 		al2.add(50);
-		
+
 		al2.ensureCapacity(15);			//1. Create ArrayList Object with Our Specified Capacity
 		System.out.println(al2);
 		

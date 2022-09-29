@@ -2,22 +2,20 @@ package com.collection.cursor;
 
 import java.util.*;
 
-public class Demo extends ArrayList
+public class Demo 
 {
 	public static void main(String[] args) {
 		
-		ArrayList al=new ArrayList();
+		Vector v=new Vector();
+		v.add(10);
+		v.add(20);
+		v.add(30);
+		System.out.println(v);
 		
-		Demo d=new Demo();
+		Stack s=new Stack();
+		s.addAll(v);					//Convert Vector Into Stack
+		System.out.println(s);
 		
-		d.add(10);
-		d.add(20);
-		d.add(30);
-		d.add(40);
-		d.add(50);
-		System.out.println("Before Removing Range 2 to 4 =>"+d);
-		d.removeRange(2, 4);
-		System.out.println("After Removing Range 2 to 4 =>"+d);
 		
 		
 		
