@@ -12,15 +12,11 @@ public class Demo
 		v.add(30);
 		System.out.println(v);
 		
-		Stack s=new Stack();
-		s.addAll(v);					//Convert Vector Into Stack
-		System.out.println(s);
+		Enumeration e=v.elements();
 		
-		
-		
-		
-		
-		
+		while(e.hasMoreElements()) {
+			System.out.println(e.nextElement());	
+			
+		}
 	}
-
 }
