@@ -4,22 +4,22 @@ import java.util.*;
 public class TestEqlandHashEmp {
 	public static void main(String[] args) {
 		HashSet h=new HashSet();
-		Employee e1=new Employee(10,"A");
-		Employee e2=new Employee(10,"A");
-		Employee e3=new Employee(10,"A");
+		Employee1 e1=new Employee1(10,"A");
+		Employee1 e2=new Employee1(10,"A");
+		Employee1 e3=new Employee1(10,"A");
 		h.add(e1);
 		h.add(e2);
 		h.add(e3);
 		System.out.println(h);
 	}
 }
-class Employee{
+class Employee1{
 	int id;
 	String name;
-	Employee(){
+	Employee1(){
 		super();
 	}
-	Employee(int id,String name){
+	Employee1(int id,String name){
 		this.id=id;
 		this.name=name;
 	}
@@ -31,14 +31,14 @@ class Employee{
 			return true;
 		if(this==null)
 			return false;
-		if(obj instanceof Employee) {
-			Employee emp=(Employee)obj;
+		if(obj instanceof Employee1) {
+			Employee1 emp=(Employee1)obj;
 			return id==emp.id && name.equals(emp.name);
 		}
 		else
 			return false;
 	}
 	public String toString() {
-		return "Employee[ID="+id+",Name="+name+"]";
+		return "Employee1[ID="+id+",Name="+name+"]";
 	}
 }

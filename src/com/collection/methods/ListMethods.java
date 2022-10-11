@@ -24,7 +24,7 @@ public class ListMethods {
 		al1.lastIndexOf(10);					   //4. Return the LastIndex of Specified Element If not Present then Return-1 
 		System.out.println(al1.lastIndexOf(10));
 		
-		List l1=al1.subList(1,3);				   //5. Return List From begin index to last index-1 and we can perform Operation also that list
+		List l1=al1.subList(1,3);				   //5. Return List view From begin index to last index-1 and we can perform Operation also that list
 		l1.add(12);
 		System.out.println(l1);
 		
